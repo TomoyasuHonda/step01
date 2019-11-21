@@ -1,0 +1,54 @@
+.p-footer {
+  color: white;
+  background: black;
+}
+
+.l-footer {
+  line-height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .l-footer {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.p-footer2 {
+  color: white;
+  background: black;
+}
+
+.p-footer2__link2--withdraw2 {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.p-footer2__button2--withdraw2 {
+  border: none;
+  background: #9e1b0b;
+  color: #fdb24e;
+  cursor: pointer;
+}
+
+.l-footer2 {
+  line-height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .l-footer2 {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+}

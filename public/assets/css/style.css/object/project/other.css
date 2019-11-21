@@ -1,0 +1,257 @@
+#p-backimage {
+  background: url(https://cdn.pixabay.com/photo/2016/12/21/18/34/clouds-1923545_1280.png);
+  background-size: cover;
+  background-position: center center;
+  height: 750px;
+}
+
+.p-register {
+  overflow: hidden;
+}
+
+.p-challenge__list {
+  padding: 10px;
+  margin: 14px;
+  background: #fb3d02;
+  padding-top: 45px;
+  height: 280px;
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .p-challenge__list {
+    width: 88%;
+    float: none;
+  }
+}
+
+.p-challenge__list--frame {
+  height: 30px;
+  background: #ffffff;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.p-challenge__list--percentage {
+  height: 30px;
+  background: green;
+}
+
+.p-challenge__list li {
+  list-style: none;
+}
+
+.p-steplist {
+  overflow: hidden;
+}
+
+.p-steplist--item {
+  width: 30%;
+  float: left;
+  font-size: 18px;
+  height: 220px;
+  line-height: 21px;
+  padding-top: 20px;
+  background: #00f5f5;
+  margin: 10px;
+  margin-top: 65px;
+  padding: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-steplist--item {
+    width: 88%;
+    float: none;
+  }
+}
+
+.p-steplist--item h2 {
+  font-size: 28px;
+}
+
+.p-steplist--item {
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.p-pagination__item {
+  display: inline-block;
+  padding: 4px;
+}
+
+.p-mysteplist__item {
+  padding: 10px;
+  margin: 14px;
+  text-align: center;
+  background: #b711b7;
+  padding-top: 45px;
+  height: 200px;
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 50px;
+  min-width: 350px;
+  overflow: hidden;
+}
+
+.p-mysteplist__item--content {
+  line-height: 23px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-mysteplist__item {
+    margin: 14px;
+    min-width: 88%;
+  }
+}
+
+.p-mysteplist__link {
+  text-decoration: none;
+  display: block;
+}
+
+.p-button--clear {
+  position: absolute;
+  top: 570px;
+  right: 250px;
+  background: #f6ff11;
+  text-decoration: none;
+  height: 38px;
+  line-height: 28px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-right: 200px;
+  display: block;
+  width: 70px;
+  font-size: 15px;
+}
+
+.p-button--clear .p-button__link--clear {
+  display: block;
+}
+
+.p-button--cleardisabed {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.p-button--back {
+  position: absolute;
+  top: 570px;
+  left: 400px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  height: 28px;
+  line-height: 28px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-right: 200px;
+  width: 65px;
+}
+
+.p-list--substep {
+  float: right;
+  font-size: 23px;
+  padding-right: 40px;
+  padding-bottom: 100px;
+  line-height: 45px;
+}
+
+.p-challenge__substep {
+  color: #c410ec;
+  text-decoration: none;
+}
+
+.p-button--challenge {
+  background: chartreuse;
+  font-size: 30px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--challenge {
+    display: block;
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 200px;
+  }
+}
+
+.p-button--delete {
+  display: inline;
+  cursor: pointer;
+  background: red;
+  height: 40px;
+  width: 70px;
+  font-size: 20px;
+  position: relative;
+  right: 300px;
+  bottom: 215px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--delete {
+    position: unset;
+    margin-bottom: 170px;
+    margin-top: 30px;
+  }
+}
+
+.p-button--add {
+  text-decoration: none;
+  color: black;
+  background: #15d815;
+  padding: 10px;
+  position: relative;
+  left: 300px;
+  bottom: 184px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--add {
+    position: unset;
+  }
+}
+
+.p-substeplist--space {
+  margin-top: 30px;
+  line-height: 50px;
+  font-size: 23px;
+}
+
+.p-form__stepnumber {
+  font-size: 50px;
+  padding: 10px;
+  padding-top: 53px;
+  letter-spacing: 19px;
+}
+
+.p-stepnumber--layout {
+  width: 65px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.p-withdraw {
+  text-align: center;
+  font-size: 20px;
+  line-height: 90px;
+}
+
+.p-exception--error {
+  text-align: center;
+  color: red;
+  padding-top: 53px;
+}
+
+.p-editpass__form {
+  height: 750px;
+}

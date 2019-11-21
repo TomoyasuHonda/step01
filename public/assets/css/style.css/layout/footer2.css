@@ -1,0 +1,15 @@
+.p-footer2 {
+  color: white;
+  background: black;
+}
+
+.l-footer2 {
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

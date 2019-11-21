@@ -1,0 +1,38 @@
+.c-category{
+    position: absolute;
+    color: red;
+    top: 150px;
+    left: 100px;
+    background: aqua;
+    font-size: 20px;
+    @media screen and (max-width: 480px) {
+    top: 125px;
+    }
+}
+
+.c-content{
+    font-size: 25px;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.c-substep__list{
+    margin-top: 60px;
+    line-height: 50px;
+    font-size: 23px;
+    margin-bottom: 100px;
+}
+
+.c-title--space{
+    font-size: 50px;
+    padding: 40px;
+    margin-top: 30px;
+}
+.c-error--msg{
+    color: #c71e1e;
+    padding: 8px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px;
+}

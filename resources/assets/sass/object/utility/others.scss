@@ -1,0 +1,65 @@
+.u-button--right{
+    position: relative;
+    bottom: 125px;
+    left: 160px;
+}
+
+.u-button--left{
+    position: relative;
+    right: 230px;
+    top: -125px;
+    @media screen and (max-width: 480px) {
+        position: unset;
+    }
+}
+
+.u-challenge--style:last-of-type{
+    margin-bottom: 800px;
+    @media screen and (max-width: 480px) {
+    margin-bottom: 200px;
+    }
+}
+
+.u-steplist--style:last-of-type{
+    @media screen and (max-width: 480px) {
+        margin-bottom: 100px;
+    }
+}
+
+.u-category--font{
+    @media screen and (max-width: 480px) {
+        font-size: 23px;
+    }
+}
+
+.u-button__search--size{
+    background: #fffd06;
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    @media screen and (max-width: 480px) {
+        font-size: 31px;
+        margin-top: 20px;
+        background: #fffd06;
+        color: #000000;
+    }
+}
+
+.u-label-style{
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
+}
+
+.u-button--positionup{
+    position: relative;
+    bottom: -82px;
+    @media screen and (max-width: 480px) {
+        position: unset;
+    }
+}
+
+.u-content--frame{
+    overflow: hidden;
+    height: 65px;
+}

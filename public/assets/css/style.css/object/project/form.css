@@ -1,0 +1,42 @@
+.p-form__button--long {
+  width: 200px !important;
+}
+
+.p-form--count {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.p-link--circle {
+  border-radius: 50%;
+  background: #c583a4;
+  position: absolute;
+  right: 100px;
+  top: 400px;
+  height: 130px;
+  line-height: 120px;
+  font-size: 25px;
+  padding: 16px;
+  text-decoration: none;
+  color: #47e424;
+}
+
+@media screen and (max-width: 480px) {
+  .p-link--circle {
+    background: #c583a4;
+    position: absolute;
+    left: 105px;
+    top: 865px;
+    height: 30px;
+    line-height: 25px;
+    font-size: 25px;
+    border-radius: 0;
+    padding: 16px;
+    text-decoration: none;
+    color: #47e424;
+  }
+}
+
+.p-upload {
+  width: 200px;
+}

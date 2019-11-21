@@ -1,0 +1,159 @@
+//=============================================================
+//認証関係フォーム(パスワード変更も含む)
+//==============================================================
+
+.c-auth__form {
+    background: black;
+    color: white;
+    //height: 750px;
+    @media screen and (max-width: 480px) {
+        height: 1200px;
+    }
+    .authform{
+        padding-top: 40px;
+        font-size: 34px;
+        line-height: 100px;
+        table {
+            margin: 0 auto;
+            @media screen and (max-width: 480px) {
+                td{
+                    display: block;
+                    text-align: center;
+                    color: white;
+                }
+                .c-authform__remember{
+                    position: relative;
+                    bottom: 100px;
+                    left: 125px;
+                }
+             }
+    
+            .c-authform__text--font{
+                font-size: 25px;
+            }
+            .c-authform__button{
+                display: block;
+                width: 90px;
+                height: 40px;
+                border: white;
+                font-size: 17px;
+                cursor: pointer;
+                margin-left: 166px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+//=============================================================
+//パスワードリマインダー関係
+//==============================================================
+.c-text--remind{
+    text-align: center;
+    line-height: 30px;
+    margin-top: 60px;
+}
+.c-form--remind{
+    width: 400px;
+    margin: 0 auto;
+    height: 300px;
+    line-height: 100px;
+    background: aliceblue;
+    .c-form__label--remind{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        .c-form__input--remind{
+            display: block;
+            width: 80%;
+            height: 30px;
+            margin: 0 auto;
+            font-size: 28px;
+        }
+    }
+    .c-form__button--remind{
+        display: block;
+        width: 25%;
+        height: 50px;
+        font-size: 21px;
+        margin-top: 50px;
+        background: black;
+        color: white;
+        float: right;
+        margin-right: 30px;
+    }
+}
+//=============================================================
+//その他フォーム(STEP登録、小STEP登録、STEP追加、プロフィール)
+//==============================================================
+
+.c-form--make {
+    text-align: center;
+    font-size: 27px;
+    background: #71716b;
+    @media screen and (max-width: 480px) {
+    height: 1100px;
+    }
+    .c-form{
+        .c-form__text{
+            font-size: 25px;
+            margin: 20px;
+            width: 25%;
+            margin-top: 0;
+            @media screen and (max-width: 480px) {
+                display: block;
+                width: 87%;
+                padding: 3px;
+                margin: 23px;
+            }
+        }
+        .c-editform__text{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 35px;
+            text-align: center;
+            @media screen and (max-width: 480px) {
+                    margin-top: 20px;
+		    width: 85%;
+            }
+        }
+        .c-form__number {
+            width: 3%;
+            font-size: 19px;
+            margin: 25px;
+        }
+        .c-form__content {
+            padding: 5px;
+            font-size: 23px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            @media screen and (max-width: 480px) {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            }
+        }
+        .c-form__category{
+            font-size: 20px;
+            margin: 30px;
+        }
+        .c-form__button {
+            width: 100px;
+            display: inline-block;
+            background: black;
+            color: white;
+            line-height: 42px;
+            font-size: 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            border: none;
+            margin-bottom: 150px;
+            @media screen and (max-width: 480px) {
+                margin-bottom: 50px;
+            }
+        }
+
+    }
+}
+

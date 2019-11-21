@@ -1,0 +1,12 @@
+{
+    "extends": [],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true
+    },
+    "plugins": [],
+    "rules": {},
+    "globals": {}
+}

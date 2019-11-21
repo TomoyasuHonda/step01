@@ -1,0 +1,315 @@
+//=============================================================
+//認証通過前のヘッダー
+//==============================================================
+.l-header{
+    overflow: hidden;
+    &__img{
+        float: left;
+        padding-top: 25px;
+        padding-left: 105px;
+        @media screen and (max-width: 480px) {
+            background: #7d7d7d;;
+            width: 100%;
+         }
+    }
+    &__logo{
+        padding-bottom: 12px;
+        position: relative;
+        bottom: 32px;
+        left: 163px;
+        @media screen and (max-width: 480px) {
+            left: 0;
+         }
+    }
+    &__logo2{
+        @media screen and (max-width: 480px) {
+            position: relative;
+            right: 160px;
+         }
+    }
+    
+    .l-header__menu{
+        float: right;
+        @media screen and (max-width: 480px) {
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            position: absolute;
+            line-height: 155px;
+            font-size: 27px;
+            left: 100%;
+            top: 97px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            display: none;
+            &.active{
+                transition: 2s;
+                left: 0%;
+                display: block;
+            }
+            &.not-active{
+                transition: 2s;
+                left: 100%;
+                display: none;
+            }
+        }
+
+        .l-header__ul{
+            padding-right: 160px;
+            line-height: 100px;
+            font-size: 37px;
+            overflow: hidden;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                line-height: 155px;
+                height: 100%;
+            }
+        }
+        &--signup{
+            float: left;
+            padding-right: 70px;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+        &--login{
+            float: left;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+        &--top{
+            float: left;
+            padding-right: 70px;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .borders{
+        display: none;
+        @media screen and (max-width: 480px){
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 28px;
+        right: 40px;
+        }
+        span.border{
+            display: none;
+            @media screen and (max-width: 480px){
+                border-top: 5px solid #000000;
+                display: block;
+                height: 17px;
+            }
+            &.border1 {
+                @media screen and (max-width: 480px){
+                transform: rotate(45deg);
+                position: relative;
+                top: 17px;
+                left: 0px;
+                transition: 1s;
+              }
+              }
+              &.border2 {
+                @media screen and (max-width: 480px){
+                opacity: 0;
+              }
+              }
+              &.border3 {
+                @media screen and (max-width: 480px){
+                    transform: rotate(-45deg);
+                    left: 13px;
+                    transition: 1s;
+                    position: relative;
+                    bottom: 26px;
+              }
+              }
+          }
+    }
+    
+}
+
+.p-header{
+    opacity: 0.95;
+    &__link{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+//=============================================================
+//認証通過後のヘッダー
+//==============================================================
+
+.l-header2{
+    overflow: hidden;
+    &__img2{
+        float: left;
+        padding-top: 25px;
+        padding-left: 0px;
+    }
+    &__logo2{
+        padding-bottom: 12px;
+        position: relative;
+        bottom: 32px;
+        left: 163px;
+        @media screen and (max-width: 480px) {
+            left: 100px;
+
+        }
+    }
+    &__mainlogo2{
+        @media screen and (max-width: 480px) {
+            position: relative;
+            right: 60px;
+        }
+    }
+    .l-header2__menu2{
+        float: right;
+        @media screen and (max-width: 480px) {
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            position: absolute;
+            line-height: 110px;
+            font-size: 27px;
+            left: 100%;
+            top: 97px;
+            width: 100%;
+            background: rgba(230, 174, 122, 0.91);
+            display: none;
+            &.active{
+                transition: 2s;
+                left: 0%;
+                display: block;
+            }
+            &.not-active{
+                transition: 2s;
+                left: 100%;
+                display: none;
+            }
+        }
+        .l-header2__ul2{
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                line-height: 110px;
+                height: 100%;
+             }
+            padding-right: 25px;
+            line-height: 100px;
+            font-size: 37px;
+            overflow: hidden;
+            .l-header2__menu2--item2{
+                float: left;
+                padding-right: 31px;
+                font-size: 23px;
+            }
+            .p-header2__link2{
+                text-decoration: none;
+            }
+            
+        }
+        &--steplist{
+            float: left;
+            padding-right: 70px;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+        &--register{
+            float: left;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+        &--mypage{
+            float: left;
+            padding-right: 70px;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+        &--prof{
+            float: left;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+        &--logout{
+            float: left;
+            padding-right: 70px;
+            @media screen and (max-width: 480px) {
+                padding: 0;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .borders2{
+        display: none;
+        @media screen and (max-width: 480px){
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 28px;
+        right: 40px;
+        }
+        span.border-2{
+            display: none;
+            @media screen and (max-width: 480px){
+                border-top: 5px solid #ffffff;
+                display: block;
+                height: 17px;
+            }
+            &.border1 {
+                @media screen and (max-width: 480px){
+                transform: rotate(45deg);
+                position: relative;
+                top: 17px;
+                left: 0px;
+                transition: 1s;
+              }
+              }
+              &.border2 {
+                @media screen and (max-width: 480px){
+                opacity: 0;
+              }
+              }
+              &.border3 {
+                @media screen and (max-width: 480px){
+                    transform: rotate(-45deg);
+                    left: 13px;
+                    transition: 1s;
+                    position: relative;
+                    bottom: 26px;
+              }
+              }
+          }
+    }
+
+}
+.p-header2{
+    opacity: 0.95;
+    @media screen and (max-width: 480px) {
+        background: black;
+     }
+}

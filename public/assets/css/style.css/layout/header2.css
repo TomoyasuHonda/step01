@@ -1,0 +1,39 @@
+#l-header {
+  overflow: hidden;
+  background: linear-gradient(45deg, black, transparent);
+}
+
+#l-header .l-img {
+  float: left;
+  padding-top: 25px;
+  padding-left: 0px;
+}
+
+#l-header .l-img .l-logo2 {
+  padding-bottom: 12px;
+  position: relative;
+  bottom: 32px;
+  left: 163px;
+}
+
+#l-header .l-nav {
+  float: right;
+}
+
+#l-header .l-nav ul {
+  padding-right: 25px;
+  line-height: 100px;
+  font-size: 37px;
+  overflow: hidden;
+}
+
+#l-header .l-nav ul li {
+  float: left;
+  padding-right: 31px;
+  font-size: 23px;
+}
+
+#l-header .l-nav ul li a {
+  text-decoration: none;
+  color: black;
+}

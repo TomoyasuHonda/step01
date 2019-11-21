@@ -1,0 +1,56 @@
+.c-top__title {
+  font-size: 75px;
+  padding-top: 153px;
+  font-family: serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .c-top__title {
+    font-size: 65px;
+  }
+}
+
+.c-top__subtitle {
+  padding-top: 31px;
+  font-family: serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .c-top__subtitle {
+    font-size: 22px;
+  }
+}
+
+.c-auth__title {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 90px;
+}
+
+.c-title {
+  font-size: 35px;
+  padding-bottom: 21px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.c-subtitle {
+  font-size: 20px;
+  text-align: center;
+  color: #7afffb;
+}
+
+@media screen and (max-width: 480px) {
+  .c-subtitle {
+    font-size: 17px;
+    padding: 10px;
+  }
+}
+
+.c-title--small {
+  font-size: 26px;
+  text-align: center;
+}

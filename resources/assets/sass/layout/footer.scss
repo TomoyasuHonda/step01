@@ -1,0 +1,53 @@
+//=============================================================
+//認証通過前のフッター
+//==============================================================
+.p-footer{
+    color: white;
+    background: black;
+}
+
+.l-footer{
+    line-height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @media screen and (max-width: 480px) {
+        text-align: center;
+        font-size: 14px;
+     }
+}
+
+//=============================================================
+//認証通過後のフッター
+//==============================================================
+
+.p-footer2{
+    color: white;
+    background: black;
+    &__link2--withdraw2{
+        color: antiquewhite;
+        text-decoration: none;
+    }
+    &__button2--withdraw2 {
+        border: none;
+        background: #9e1b0b;
+        color: #fdb24e;
+        cursor: pointer;
+    }
+}
+
+.l-footer2{
+    line-height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @media screen and (max-width: 480px) {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+     }
+}

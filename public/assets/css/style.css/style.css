@@ -1,0 +1,1321 @@
+/* ==========================================================================
+ Foundation
+============================================================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #5a5757;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+ layout
+============================================================================*/
+.l-footer--logout {
+  line-height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .l-footer--logout {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.l-footer--login {
+  line-height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .l-footer--login {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    position: none;
+    margin-top: 200px;
+    z-index: -1;
+  }
+}
+
+.l-header {
+  overflow: hidden;
+}
+
+.l-header__img {
+  float: left;
+  padding-top: 25px;
+  padding-left: 105px;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-header__logo {
+    position: relative;
+    right: 110px;
+  }
+}
+
+.l-header .l-header__menu {
+  float: right;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .l-header__menu {
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    position: absolute;
+    line-height: 155px;
+    font-size: 27px;
+    left: 100%;
+    top: 97px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+  }
+  .l-header .l-header__menu.active {
+    transition: 2s;
+    left: 0%;
+    display: block;
+  }
+  .l-header .l-header__menu.not-active {
+    transition: 2s;
+    left: 100%;
+    display: none;
+  }
+}
+
+.l-header .l-header__menu .l-header__ul {
+  padding-right: 160px;
+  line-height: 100px;
+  font-size: 37px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .l-header__menu .l-header__ul {
+    padding: 0;
+    line-height: 155px;
+    height: 100%;
+  }
+}
+
+.l-header .l-header__menu--signup {
+  float: left;
+  padding-right: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .l-header__menu--signup {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header .l-header__menu--login {
+  float: left;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .l-header__menu--login {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header .l-header__menu--top {
+  float: left;
+  padding-right: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .l-header__menu--top {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header .borders {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .borders {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+  }
+}
+
+.l-header .borders span.border--logout {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .borders span.border--logout {
+    border-top: 5px solid #000000;
+    display: block;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .borders span.border--logout.border1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 17px;
+    left: 0px;
+    transition: 1s;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .borders span.border--logout.border2 {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-header .borders span.border--logout.border3 {
+    transform: rotate(-45deg);
+    left: 13px;
+    transition: 1s;
+    position: relative;
+    bottom: 26px;
+  }
+}
+
+.l-header--login {
+  overflow: hidden;
+}
+
+.l-header--login .l-header__img--login {
+  float: left;
+  padding-top: 40px;
+  padding-left: 50px;
+  position: relative;
+  bottom: 16px;
+  left: 78px;
+}
+
+.l-header--login .l-header__mainlogo--login {
+  width: 100px;
+  height: 55px;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__mainlogo--login {
+    position: relative;
+    right: 60px;
+  }
+}
+
+.l-header--login .l-header__menu--login {
+  float: right;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__menu--login {
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    position: absolute;
+    line-height: 110px;
+    font-size: 27px;
+    left: 100%;
+    top: 97px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: none;
+  }
+  .l-header--login .l-header__menu--login.active {
+    transition: 2s;
+    left: 0%;
+    display: block;
+  }
+  .l-header--login .l-header__menu--login.not-active {
+    transition: 2s;
+    left: 100%;
+    display: none;
+  }
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login {
+  padding-right: 25px;
+  line-height: 100px;
+  font-size: 37px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__menu--login .l-header__ul--login {
+    padding: 0;
+    line-height: 110px;
+    height: 100%;
+  }
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login .l-header__commonmenu {
+  float: left;
+  padding-right: 31px;
+  font-size: 23px;
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login .p-header2__link2 {
+  text-decoration: none;
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login .l-menu__steplist--login {
+  float: left;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__menu--login .l-header__ul--login .l-menu__steplist--login {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login .l-menu__register--login {
+  float: left;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__menu--login .l-header__ul--login .l-menu__register--login {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login .l-menu__mypage--login {
+  float: left;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__menu--login .l-header__ul--login .l-menu__mypage--login {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login .l-menu__prof--login {
+  float: left;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__menu--login .l-header__ul--login .l-menu__prof--login {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header--login .l-header__menu--login .l-header__ul--login .l-menu__logout--login {
+  float: left;
+  padding-right: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .l-header__menu--login .l-header__ul--login .l-menu__logout--login {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.l-header--login .borders {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .borders {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+  }
+}
+
+.l-header--login .borders span.border--login {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .borders span.border--login {
+    border-top: 5px solid black;
+    display: block;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .borders span.border--login.border1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 17px;
+    left: 0px;
+    transition: 1s;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .borders span.border--login.border2 {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-header--login .borders span.border--login.border3 {
+    transform: rotate(-45deg);
+    left: 13px;
+    transition: 1s;
+    position: relative;
+    bottom: 26px;
+  }
+}
+
+div#appp {
+  text-align: center;
+}
+
+/* ==========================================================================
+ object
+============================================================================*/
+.c-auth__form {
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .c-auth__form {
+    height: 1200px;
+  }
+}
+
+.c-auth__form .authform {
+  padding-top: 40px;
+  font-size: 34px;
+  line-height: 100px;
+}
+
+.c-auth__form .authform table {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .c-auth__form .authform table td {
+    display: block;
+    text-align: center;
+  }
+  .c-auth__form .authform table .c-authform__remember {
+    position: relative;
+    bottom: 100px;
+    left: 125px;
+  }
+}
+
+.c-auth__form .authform table .c-authform__text--font {
+  font-size: 25px;
+}
+
+.c-auth__form .authform table .c-authform__button {
+  display: block;
+  width: 85px;
+  height: 40px;
+  border: white;
+  font-size: 17px;
+  cursor: pointer;
+  margin-left: 166px;
+  margin-bottom: 80px;
+  background: black;
+  color: white;
+}
+
+.c-text--remind {
+  text-align: center;
+  line-height: 30px;
+  margin-top: 60px;
+}
+
+.c-form--remind {
+  width: 400px;
+  margin: 0 auto;
+  height: 300px;
+  line-height: 100px;
+  background: aliceblue;
+}
+
+.c-form--remind .c-form__label--remind {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.c-form--remind .c-form__label--remind .c-form__input--remind {
+  display: block;
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 28px;
+}
+
+.c-form--remind .c-form__button--remind {
+  display: block;
+  width: 25%;
+  height: 50px;
+  font-size: 21px;
+  margin-top: 50px;
+  background: black;
+  color: white;
+  float: right;
+  margin-right: 30px;
+}
+
+.c-form--make {
+  font-size: 27px;
+}
+
+@media screen and (max-width: 480px) {
+  .c-form--make {
+    height: 1100px;
+  }
+}
+
+.c-form--make .c-form {
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 480px) {
+  .c-form--make .c-form {
+    width: 80%;
+  }
+}
+
+.c-form--make .c-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.c-form--make .c-form .c-form__text {
+  font-size: 25px;
+  width: 72%;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 480px) {
+  .c-form--make .c-form .c-form__text {
+    display: block;
+    width: 87%;
+    padding: 3px;
+  }
+}
+
+.c-form--make .c-form .c-editform__text {
+  font-size: 30px;
+  text-align: center;
+  width: 72%;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 480px) {
+  .c-form--make .c-form .c-editform__text {
+    margin-top: 20px;
+    width: 85%;
+  }
+}
+
+.c-form--make .c-form .c-form__number {
+  width: 5%;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.c-form--make .c-form .c-form__content {
+  padding: 5px;
+  font-size: 23px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 480px) {
+  .c-form--make .c-form .c-form__content {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.c-form--make .c-form .c-form__category {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.c-form--make .c-form .c-form__button {
+  width: 85px;
+  display: block;
+  background: black;
+  color: white;
+  line-height: 42px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  .c-form--make .c-form .c-form__button {
+    margin-bottom: 50px;
+  }
+}
+
+.c-category {
+  position: absolute;
+  color: #5a5757;
+  top: 150px;
+  left: 100px;
+  background: #faf8cb;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .c-category {
+    top: 125px;
+  }
+}
+
+.c-content {
+  font-size: 25px;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.c-substep__list {
+  margin-top: 60px;
+  line-height: 50px;
+  font-size: 23px;
+  margin-bottom: 100px;
+}
+
+.c-title--space {
+  font-size: 50px;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+.c-error--msg {
+  color: #c71e1e;
+  padding: 8px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.c-successmsg--slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #cde9ee;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  opacity: 0.8;
+}
+
+.c-step--finish {
+  display: inline-block;
+  text-align: center;
+  background: #faf8cb;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.c-button--frame {
+  border: 1px solid #cccccc;
+  display: inline-block;
+  padding: 5px;
+}
+
+.c-top__title {
+  font-size: 75px;
+  padding-top: 153px;
+  font-family: serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .c-top__title {
+    font-size: 65px;
+  }
+}
+
+.c-top__subtitle {
+  padding-top: 31px;
+  font-family: serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .c-top__subtitle {
+    font-size: 22px;
+  }
+}
+
+.c-auth__title {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 90px;
+}
+
+.c-title {
+  font-size: 35px;
+  padding-bottom: 21px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.c-subtitle {
+  font-size: 20px;
+  text-align: center;
+  color: #000000bf;
+}
+
+@media screen and (max-width: 480px) {
+  .c-subtitle {
+    font-size: 17px;
+    padding: 10px;
+  }
+}
+
+.c-title--small {
+  font-size: 26px;
+  text-align: center;
+}
+
+.p-footer--logout {
+  color: black;
+}
+
+.p-footer--login {
+  color: black;
+}
+
+.p-footer--login .p-footer__link--withdraw {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.p-footer--login .p-footer__button--withdraw {
+  border: none;
+  color: #000000cf;
+  cursor: pointer;
+}
+
+.p-form__button--long {
+  width: 200px !important;
+}
+
+.p-form--count {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.p-upload {
+  width: 200px;
+}
+
+.p-form__stepnumber {
+  font-size: 50px;
+  padding: 10px;
+  padding-top: 53px;
+  letter-spacing: 19px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-form__stepnumber {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .p-step--add {
+    text-align: center;
+    margin: 40px;
+  }
+}
+
+.p-header {
+  opacity: 0.95;
+}
+
+.p-header__link {
+  text-decoration: none;
+  color: black;
+}
+
+.p-register {
+  overflow: hidden;
+}
+
+.p-challenge__list {
+  padding: 10px;
+  margin: 14px;
+  background: #f8c8c9;
+  padding-top: 45px;
+  height: 280px;
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .p-challenge__list {
+    width: 88%;
+    float: none;
+  }
+}
+
+.p-challenge__list--frame {
+  height: 30px;
+  background: #ffffff;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.p-challenge__list--percentage {
+  height: 30px;
+  background: #cbe4c1;
+}
+
+.p-challenge__list li {
+  list-style: none;
+}
+
+.p-steplist {
+  overflow: hidden;
+}
+
+.p-steplist--item {
+  width: 30%;
+  float: left;
+  font-size: 18px;
+  height: 220px;
+  line-height: 21px;
+  padding-top: 20px;
+  background: #cde9ee;
+  margin: 10px;
+  margin-top: 65px;
+  padding: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-steplist--item {
+    width: 88%;
+    float: none;
+  }
+}
+
+.p-steplist--item h2 {
+  font-size: 28px;
+}
+
+.p-steplist--item {
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.p-pagination__item {
+  display: inline-block;
+  padding: 4px;
+}
+
+.p-mysteplist__item {
+  padding: 10px;
+  margin: 14px;
+  text-align: center;
+  background: #faf8cb;
+  padding-top: 45px;
+  height: 200px;
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 50px;
+  min-width: 350px;
+  overflow: hidden;
+}
+
+.p-mysteplist__item--content {
+  line-height: 23px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-mysteplist__item {
+    margin: 14px;
+    min-width: 88%;
+  }
+}
+
+.p-mysteplist__link {
+  text-decoration: none;
+  display: block;
+}
+
+.p-button--clear {
+  position: absolute;
+  top: 570px;
+  right: 250px;
+  background: #f6ff11;
+  text-decoration: none;
+  height: 38px;
+  line-height: 28px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-right: 200px;
+  display: block;
+  width: 70px;
+  font-size: 15px;
+}
+
+.p-button--clear .p-button__link--clear {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--clear {
+    position: unset;
+    background: #f6ff11;
+    text-decoration: none;
+    height: 38px;
+    line-height: 28px;
+    display: block;
+    width: 70px;
+    font-size: 15px;
+    margin: 20px auto;
+  }
+}
+
+.p-button--cleardisabed {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.p-button--back {
+  position: absolute;
+  top: 570px;
+  left: 400px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  height: 28px;
+  line-height: 28px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-right: 200px;
+  width: 65px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--back {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    text-decoration: none;
+    height: 28px;
+    line-height: 28px;
+    padding: 5px;
+    width: 65px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+}
+
+.p-list--substep {
+  float: right;
+  font-size: 23px;
+  padding-right: 40px;
+  padding-bottom: 100px;
+  line-height: 45px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-list--substep {
+    font-size: 23px;
+    float: none;
+    padding-bottom: 100px;
+    line-height: 45px;
+    padding-right: 0;
+  }
+}
+
+.p-challenge__substep {
+  color: #ab6d86;
+  text-decoration: none;
+}
+
+.p-button--challenge {
+  text-decoration: none;
+  background: #faf8cb;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--challenge {
+    display: block;
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 200px;
+  }
+}
+
+.p-button--delete {
+  display: inline;
+  cursor: pointer;
+  background: #f8c8c9;
+  height: 40px;
+  width: 70px;
+  font-size: 18px;
+  position: relative;
+  bottom: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--delete {
+    position: unset;
+    margin-bottom: 170px;
+    margin-top: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.p-button--add {
+  text-decoration: none;
+  color: black;
+  background: #cbe4c1;
+  padding: 13px;
+  position: relative;
+  left: 500px;
+  bottom: 35px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--add {
+    position: unset;
+  }
+}
+
+.p-substeplist--space {
+  margin-top: 30px;
+  line-height: 50px;
+  font-size: 23px;
+  text-align: center;
+}
+
+.p-stepnumber--layout {
+  width: 65px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.p-withdraw {
+  text-align: center;
+  font-size: 20px;
+  line-height: 90px;
+}
+
+.p-exception--error {
+  text-align: center;
+  color: red;
+  padding-top: 53px;
+}
+
+.p-editpass__form {
+  height: 750px;
+}
+
+.p-backimage--logout {
+  background: url(https://image.freepik.com/free-photo/_23-2147809106.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+}
+
+.p-image--fish, .p-image--flower {
+  position: absolute;
+  top: 100px;
+  display: inline-block;
+  height: 150px;
+  right: 155px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-image--fish, .p-image--flower {
+    display: none;
+  }
+}
+
+.p-image--animals {
+  position: absolute;
+  top: 100px;
+  display: inline-block;
+  height: 150px;
+  right: 20px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .p-image--animals {
+    display: none;
+  }
+}
+
+.p-selfintroduction {
+  float: left;
+  text-align: center;
+  width: 60%;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .p-selfintroduction {
+    text-align: center;
+    padding: 10px;
+    float: none;
+    width: unset;
+  }
+}
+
+.p-selfintroduction__h2 {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.p-selfintroduction__p {
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.p-image {
+  float: right;
+  text-align: center;
+  width: 35%;
+}
+
+@media screen and (max-width: 480px) {
+  .p-image {
+    float: none;
+    width: unset;
+  }
+}
+
+.p-image__img {
+  width: 40%;
+}
+
+@media screen and (max-width: 480px) {
+  .p-image__img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.p-button--back {
+  display: block;
+  width: 85px;
+  font-size: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .p-button--back {
+    display: block;
+    width: 100px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 200px;
+    position: unset;
+  }
+}
+
+.u-button--right {
+  position: relative;
+  bottom: 125px;
+  left: 160px;
+}
+
+.u-button--left {
+  position: relative;
+  right: 230px;
+  top: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .u-button--left {
+    position: unset;
+  }
+}
+
+.u-challenge--style:last-of-type {
+  margin-bottom: 800px;
+}
+
+@media screen and (max-width: 480px) {
+  .u-challenge--style:last-of-type {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .u-steplist--style:last-of-type {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .u-category--font {
+    font-size: 23px;
+  }
+}
+
+.u-button__search--size {
+  background: #faf8cb;
+  color: #000000;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .u-button__search--size {
+    font-size: 31px;
+    margin-top: 20px;
+    background: #faf8cb;
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .u-label-style {
+    display: block;
+  }
+}
+
+.u-button--positionup {
+  position: relative;
+  bottom: -82px;
+}
+
+@media screen and (max-width: 480px) {
+  .u-button--positionup {
+    position: unset;
+  }
+}
+
+.u-content--frame {
+  overflow: hidden;
+  height: 65px;
+}
+
+li.p-pagination__item.active {
+  background: #faf8cb;
+}
+
+/* EoF */
