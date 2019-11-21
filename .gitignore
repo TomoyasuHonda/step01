@@ -3,3 +3,6 @@
 /fuel/app/logs/
 /fuel/app/cache/
 /fuel/app/config/
+node_modules
+package-lock.json
+composer.lock
